@@ -1,0 +1,34 @@
+{
+  "name": "vanilla-react-typescript-loader",
+  "version": "1.0.0",
+  "description": "Vanilla React Typescript Loader",
+  "main": "index.js",
+  "scripts": {
+    "build:webpack:client": "webpack --config webpack.config.client.js",
+    "build:webpack:server": "webpack --config webpack.config.server.js",
+    "build": "npm run build:webpack:client && npm run build:webpack:server",
+    "start": "npm run build && node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnindrazaka/vanilla-react-typescript-loader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnindrazaka/vanilla-react-typescript-loader/issues"
+  },
+  "homepage": "https://github.com/mnindrazaka/vanilla-react-typescript-loader#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
